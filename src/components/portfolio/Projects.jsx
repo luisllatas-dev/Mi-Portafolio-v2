@@ -97,13 +97,13 @@ export default function Projects() {
                 aria-describedby={`desc-${p.id}`}
               >
                 {/* Thumbnail */}
-                <div className="relative aspect-[16/10] overflow-hidden scanlines">
+                <div className="relative aspect-[16/10] overflow-hidden">
                   <img
                     src={p.image}
                     alt={p.title}
-                    className="w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700"
+                    className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#08080A] via-[#08080A]/40 to-transparent z-[2]" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#08080A]/80 via-transparent to-transparent z-[2]" />
 
                   {/* Project number */}
                   <div className="absolute top-4 left-4 z-[3]">
