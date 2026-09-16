@@ -1,5 +1,7 @@
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, ArrowUpRight } from "lucide-react";
 import RevealSection from "./RevealSection";
+
+const GITHUB_URL = "https://github.com/luisllatas-dev";
 
 const PROJECTS = [
   {
@@ -169,6 +171,24 @@ export default function Projects() {
             </RevealSection>
           ))}
         </div>
+
+        {/* More projects → GitHub */}
+        <RevealSection delay={0.15}>
+          <div className="mt-10 flex justify-end">
+            <a
+              href={GITHUB_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-1.5 font-mono-tech text-xs uppercase tracking-widest text-[#00E5FF] text-glow-cyan hover:text-[#F0F4F8] transition-colors duration-300"
+            >
+              Mira aquí mis demás proyectos
+              <ArrowUpRight
+                size={14}
+                className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+              />
+            </a>
+          </div>
+        </RevealSection>
       </div>
     </section>
   );
