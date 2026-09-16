@@ -1,23 +1,47 @@
-import { Award, BookOpen, Bot, Sparkles } from "lucide-react";
+import { Award, BookOpen, Bot, Sparkles, Network, Code2, Wind, Palette } from "lucide-react";
 import RevealSection from "./RevealSection";
 
 const CERTS = [
   {
+    icon: Bot,
+    title: "Desarrollo con IA: Programa con Agentes",
+    issuer: "Big School · Jun 2026",
+    accent: "#00E5FF",
+  },
+  {
+    icon: Code2,
+    title: "Curso Profesional de Angular",
+    issuer: "Código Facilito · Jul 2026",
+    accent: "#7C3AED",
+  },
+  {
     icon: Award,
     title: "GitHub Foundations",
-    issuer: "GitHub",
+    issuer: "GitHub · 2025",
     accent: "#00E5FF",
   },
   {
     icon: BookOpen,
     title: "Intermediate SQL",
-    issuer: "DataCamp",
+    issuer: "DataCamp · 2025",
     accent: "#7C3AED",
   },
   {
-    icon: Bot,
-    title: "Software Basado en Agentes",
-    issuer: "Código Facilito",
+    icon: Wind,
+    title: "Tailwind desde Cero",
+    issuer: "Midudev · Sep 2025",
+    accent: "#00E5FF",
+  },
+  {
+    icon: Network,
+    title: "CCNA: Introduction to Networks",
+    issuer: "Cisco · Feb 2026",
+    accent: "#7C3AED",
+  },
+  {
+    icon: Palette,
+    title: "CSS desde Cero",
+    issuer: "Midudev · Nov 2025",
     accent: "#00E5FF",
   },
   {
