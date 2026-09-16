@@ -1,9 +1,9 @@
 import { ExternalLink, ArrowUpRight } from "lucide-react";
 import RevealSection from "./RevealSection";
-import imgSoporte from "@/assets/Gestion_solicitudes.png";
-import imgBarberia from "@/assets/barberia.png";
-import imgRestaurant from "@/assets/restaurant.png";
-import imgPos from "@/assets/POs.png";
+import imgSoporte from "@/assets/Gestion_solicitudes.webp";
+import imgBarberia from "@/assets/barberia.webp";
+import imgRestaurant from "@/assets/restaurant.webp";
+import imgPos from "@/assets/POs.webp";
 
 const GITHUB_URL = "https://github.com/luisllatas-dev";
 
