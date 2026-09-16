@@ -1,5 +1,9 @@
 import { ExternalLink, ArrowUpRight } from "lucide-react";
 import RevealSection from "./RevealSection";
+import imgSoporte from "@/assets/Gestion_solicitudes.png";
+import imgBarberia from "@/assets/barberia.png";
+import imgRestaurant from "@/assets/restaurant.png";
+import imgPos from "@/assets/POs.png";
 
 const GITHUB_URL = "https://github.com/luisllatas-dev";
 
@@ -11,7 +15,7 @@ const PROJECTS = [
     description:
     "Lideré y desarrollé este proyecto para gestionar el ciclo de vida de tickets de soporte técnico: creación, asignación, seguimiento de estados, observaciones, control de usuarios y notificaciones",
     tech: ["Java", "Spring Boot", "MySQL"],
-    image: "src/assets/Gestion_solicitudes.png",
+    image: imgSoporte,
     accent: "#00E5FF",
     glitch: true,
     tag: "SYSTEM_SUPPORT",
@@ -23,7 +27,7 @@ const PROJECTS = [
     description:
       "Sistema full-stack de reservas para barbería con web pública y panel de gestión. Los clientes se registran, eligen servicio, barbero y hueco libre; el admin gestiona citas, catálogo, horarios y usuarios desde un dashboard con KPIs, gráficos y exportación CSV.",
     tech: ["TypeScript", "Next.js", "React", "Tailwind", "SQLite"],
-    image: "src/assets/barberia.png",
+    image: imgBarberia,
     accent: "#7C3AED",
     glitch: false,
     tag: "MVP_PROJECT",
@@ -35,7 +39,7 @@ const PROJECTS = [
     description:
       "Interfaz de usuario completa para la gestión de citas de restaurantes. UI/UX intuitiva que simplifica el agendamiento de citas, seguimiento de mesas y estados.",
     tech: ["JavaScript","React", "Tailwind"],
-    image: "src/assets/restaurant.png",
+    image: imgRestaurant,
     accent: "#00E5FF",
     glitch: false,
     tag: "FRONTEND_FULL",
@@ -47,7 +51,7 @@ const PROJECTS = [
     description:
       "POS local para minimarket: inventario con código de barras y stock mínimo, caja con carrito y cobro en efectivo, tickets imprimibles e informes diarios de ventas.",
     tech: ["TypeScript","React", "Node.js", "Express", "SQLite"],
-    image: "src/assets/POs.png",
+    image: imgPos,
     accent: "#7C3AED",
     glitch: false,
     tag: "SYSTEM_POS",
