@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://luiseduardoportafolio.vercel.app/sitemap.xml
