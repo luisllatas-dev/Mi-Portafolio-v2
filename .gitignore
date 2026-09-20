@@ -1,6 +1,15 @@
 # Dependencies
 node_modules
 
+# Python (backend)
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+backend/.env
+backend/.env.local
+
 # Build
 dist
 dist-ssr
@@ -11,6 +20,7 @@ dist-ssr
 .env
 .env.*
 !.env.example
+!backend/.env.example
 
 # Logs
 /logs
