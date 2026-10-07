@@ -26,7 +26,7 @@ ALLOWED_ORIGINS = [
     o.strip()
     for o in os.getenv(
         "ALLOWED_ORIGINS",
-        "https://luiseduardoportafolio.vercel.app,http://localhost:5173,http://127.0.0.1:5173",
+        "https://luiseduardo.online,https://luiseduardoportafolio.vercel.app,http://localhost:5173,http://127.0.0.1:5173",
     ).split(",")
     if o.strip()
 ]

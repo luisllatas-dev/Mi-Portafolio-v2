@@ -93,7 +93,7 @@ az webapp config appsettings set `
     FOUNDRY_AGENT_NAME="Nani" `
     FOUNDRY_AGENT_VERSION="1" `
     CHAT_MAX_QUESTIONS="5" `
-    ALLOWED_ORIGINS="https://luiseduardoportafolio.vercel.app,http://localhost:5173" `
+    ALLOWED_ORIGINS="https://luiseduardo.online,https://luiseduardoportafolio.vercel.app,http://localhost:5173" `
     SCM_DO_BUILD_DURING_DEPLOYMENT="true" `
     ENABLE_ORYX_BUILD="true" `
   --output none

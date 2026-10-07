@@ -9,7 +9,21 @@ const CLIENT_SECRET = process.env.AZURE_CLIENT_SECRET;
 
 const hasServicePrincipal = Boolean(TENANT_ID && CLIENT_ID && CLIENT_SECRET);
 
-const ALLOWED_ORIGIN = process.env.SITE_ORIGIN || "*";
+function resolveAllowedOrigin(requestOrigin) {
+  const configured = (process.env.SITE_ORIGIN || "*")
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean);
+
+  if (configured.includes("*")) {
+    return "*";
+  }
+  if (requestOrigin && configured.includes(requestOrigin)) {
+    return requestOrigin;
+  }
+  return configured[0] || "*";
+}
+
 const MAX_QUESTIONS = Number(process.env.CHAT_MAX_QUESTIONS || 5);
 
 export const config = { maxDuration: 60 };
@@ -56,7 +70,7 @@ function extractReply(json) {
 }
 
 export default async function handler(req, res) {
-  res.setHeader("Access-Control-Allow-Origin", ALLOWED_ORIGIN);
+  res.setHeader("Access-Control-Allow-Origin", resolveAllowedOrigin(req.headers.origin));
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 

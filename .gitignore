@@ -49,3 +49,6 @@ Thumbs.db
 coverage
 *.tsbuildinfo
 .playwright-cli
+
+# Agent chat context
+contexto-conversacion-agente.md
